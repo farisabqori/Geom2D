@@ -10,13 +10,6 @@ public class Kite implements Geom2D{
     private double topSide = 0;
     private double bottomSide = 0;
 
-    public Kite(double longDiagonal, double shortDiagonal, double topSide, double bottomSide){
-        this.longDiagonal = longDiagonal;
-        this.shortDiagonal = shortDiagonal;
-        this.topSide = topSide;
-        this.bottomSide = bottomSide;
-    };
-
     @Override
     public double getArea() {
         return 0.5*longDiagonal*shortDiagonal;
@@ -37,7 +30,7 @@ public class Kite implements Geom2D{
             @Override
             public void paint(Graphics g) {
                 g.setColor(Color.BLUE);
-                g.fillPolygon(new int[] {50, 100, 150, 100}, new int[] {50, 20, 50, 150}, 4);
+                g.fillRect(100, 100, 250, 250);
             }
         };
 

@@ -38,7 +38,7 @@ public class Parallelogram implements Geom2D {
             @Override
             public void paint(Graphics g) {
                 g.setColor(Color.BLUE);
-                g.fillPolygon(new int[] {50, 90, 230, 190}, new int[] {150, 20, 20, 150}, 4);
+                g.fillRect(100, 100, 250, 250);
             }
         };
 
