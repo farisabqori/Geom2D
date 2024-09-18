@@ -1,6 +1,6 @@
 package polyinterface_new;
 
-public class Main{
+public class MainApp {
     public static void main(String[] args) {
 //        Geom2D Segitiga = new Triangle(6, 8, 10);
 //

@@ -8,6 +8,12 @@ public class Triangle implements Geom2D{
     private double bottom = 0;
     private double height = 0;
     private double italic = 0;
+    private int price = 9000;
+
+    public int getPrice() {
+        return price;
+    }
+
     public Triangle(double bottom, double height, double italic){
         this.bottom = bottom;
         this.height = height;
@@ -28,6 +34,10 @@ public class Triangle implements Geom2D{
             return (italic*2)+bottom;
         }
         return Math.sqrt(Math.pow(height, 2) + Math.pow(bottom*0.5, 2));
+    }
+
+    public void showPrice(){
+        System.out.println("Price for make Triangle for 1 meter area: " + price);
     }
 
     public void drawIllustration() {

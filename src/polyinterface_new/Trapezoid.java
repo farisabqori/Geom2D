@@ -9,6 +9,12 @@ public class Trapezoid implements Geom2D{
     private double top = 0;
     private double height = 0;
     private double italic = 0;
+    private int price = 18000;
+
+    public int getPrice() {
+        return price;
+    }
+
     public Trapezoid(double bottom, double top, double height, double italic){
         this.bottom = bottom;
         this.top = top;
@@ -34,6 +40,10 @@ public class Trapezoid implements Geom2D{
             return Math.sqrt(Math.pow(0.5*(bottom - top), 2) + Math.pow(height, 2));
         }
 
+    }
+
+    public void showPrice(){
+        System.out.println("Price for make Trapezoid for 1 meter area: " + price);
     }
 
 

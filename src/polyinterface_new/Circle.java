@@ -8,7 +8,11 @@ import javax.swing.JPanel;
 
 public class Circle implements Geom2D {
 	
-	public int radius;
+	private double radius;
+
+
+
+	private int price = 10000;
 	
 	public Circle(int radius) {
 		this.radius = radius;
@@ -22,6 +26,10 @@ public class Circle implements Geom2D {
 	@Override
 	public double getPerimeter() {
 		return Math.PI * 2 * radius;
+	}
+
+	public void showPrice(){
+		System.out.println("Price for make circle for 1 meter area: " + price);
 	}
 
 	@Override
@@ -42,6 +50,9 @@ public class Circle implements Geom2D {
 		fr.add(pn1);
 		fr.setVisible(true);	
 		
+	}
+	public int getPrice() {
+		return this.price;
 	}
 	
 	@Override

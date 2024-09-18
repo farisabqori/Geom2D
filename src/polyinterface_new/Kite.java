@@ -10,6 +10,8 @@ public class Kite implements Geom2D{
     private double topSide = 0;
     private double bottomSide = 0;
 
+    private int price = 12000;
+
     public Kite(double longDiagonal, double shortDiagonal, double topSide, double bottomSide){
         this.longDiagonal = longDiagonal;
         this.shortDiagonal = shortDiagonal;
@@ -17,6 +19,9 @@ public class Kite implements Geom2D{
         this.bottomSide = bottomSide;
     };
 
+    public int getPrice() {
+        return price;
+    }
     @Override
     public double getArea() {
         return 0.5*longDiagonal*shortDiagonal;
@@ -25,6 +30,10 @@ public class Kite implements Geom2D{
     @Override
     public double getPerimeter() {
         return 2 * (topSide+bottomSide);
+    }
+
+    public void showPrice(){
+        System.out.println("Price for make Kite for 1 meter area: " + price);
     }
 
     @Override

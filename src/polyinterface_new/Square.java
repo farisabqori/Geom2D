@@ -9,7 +9,12 @@ import javax.swing.JPanel;
 public class Square implements Geom2D {
 	
 	private double side;
-	
+	private int price = 6000;
+
+	public int getPrice() {
+		return price;
+	}
+
 	public Square(double side) {
 		this.side = side;
 	}
@@ -23,9 +28,9 @@ public class Square implements Geom2D {
 	public double getPerimeter() {
 		return 4*side;
 	}
-	
-	public String toString() {
-		return "This is a square with sides of length: " + side;
+
+	public void showPrice(){
+		System.out.println("Price for make Square for 1 meter area: " + price);
 	}
 
 	@Override

@@ -12,6 +12,11 @@ public class Rectangle implements Geom2D{
     private int length;
     private int wide;
 
+    private int price = 8000;
+
+    public int getPrice() {
+        return price;
+    }
     public Rectangle(int length, int wide){
         this.length = length;
         this.wide = wide;
@@ -22,6 +27,10 @@ public class Rectangle implements Geom2D{
 
     public double getPerimeter() {
         return 2*(length + wide);
+    }
+
+    public void showPrice(){
+        System.out.println("Price for make Rectangle for 1 meter area: " + price);
     }
 
     public void drawIllustration() {
