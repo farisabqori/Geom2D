@@ -20,11 +20,11 @@ public class MainApp {
 //        System.out.println(Jajargenjang.getPerimeter());
 //        Jajargenjang.drawIllustration();
 
-          Geom2D Layangan = new Kite(10, 5, 6,14);
+          Geom2D persegipanjang = new Rectangle(10, 5);
 
-          System.out.println(Layangan.getArea());
-          System.out.println(Layangan.getPerimeter());
-          Layangan.drawIllustration();
+          System.out.println(persegipanjang.getArea());
+          System.out.println(persegipanjang.getPerimeter());
+          persegipanjang.drawIllustration();
 
     }
 }

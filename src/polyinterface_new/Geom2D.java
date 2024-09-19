@@ -2,9 +2,9 @@ package polyinterface_new;
 
 public interface Geom2D {
 	
-	double getArea();				// public abstract
-	double getPerimeter();			// public abstract
+	double getArea();			
+	double getPerimeter();			
 	void   drawIllustration();
 	int getPrice();
-	// public abstract
+
 }

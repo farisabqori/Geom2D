@@ -3,7 +3,7 @@ package polyinterface_new.geomapp;
 public class Menu {
 
     public String[] shape = {
-            "Lingkaran", "Layang-Layang", "Jajargenjang", "Persegi", "Persegi Panjang", "Trapesium", "Segitiga"
+            "Lingkaran", "Layang-Layang", "Jajargenjang", "Persegi Panjang", "Persegi", "Trapesium", "Segitiga"
     };
     public void showDashboard(){
         System.out.println("Selamat Datang di Toko Geom2D");
@@ -13,8 +13,8 @@ public class Menu {
         System.out.println("1. Lingkaran");
         System.out.println("2. Layang-layang");
         System.out.println("3. Jajargenjang");
-        System.out.println("4. Persegi");
-        System.out.println("5. Persegi Panjang");
+        System.out.println("4. Persegi Panjang");
+        System.out.println("5. Persegi");
         System.out.println("6. Trapesium");
         System.out.println("7. Segitiga");
         System.out.println("------------------------------");

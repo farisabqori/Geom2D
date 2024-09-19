@@ -60,8 +60,9 @@ public class Geom2DApp {
             } else {
                 menu.showOptionBuyMenu(input);
                 purchase.add(buy.Buy(input));
+                purchase.get(iterasi).drawIllustration();
 
-                hargaTotal = hargaTotal + (purchase.get(iterasi).getPrice() * jumlah);
+                hargaTotal = hargaTotal + (purchase.get(iterasi).getPrice() * jumlah * purchase.get(iterasi).getArea());
                 menu.showHeader(input);
                 System.out.println("Informasi Pembelian Saat ini");
                 System.out.println("------------------------------");

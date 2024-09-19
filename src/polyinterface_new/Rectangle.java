@@ -42,7 +42,8 @@ public class Rectangle implements Geom2D{
             @Override
             public void paint(Graphics g) {
                 g.setColor(Color.RED);
-                g.fillOval(100, 100, 250, 250);
+                g.fillRect(100, 100, 500, 250);
+//                g.fillPolygon(new int[] {50, 50, 300, 300}, new int[] {20, 150, 150, 20}, 4);
             }
         };
 
